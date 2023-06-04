@@ -1,0 +1,77 @@
+cd Demo
+ls
+rm -rf a
+ls
+mkdir repo1
+ls
+file repo1
+cd repo1/
+ls
+pwd
+ls
+ls -a
+git init
+ls -la
+ls -a
+ls -a
+pwd
+touch a b
+ls
+ls
+cd ..
+ls
+rm -rf repo1
+ls
+pwd
+mkdir repo2
+ls
+cd repo2
+pwd
+ls
+ls -a
+git init
+ls -a
+touch 1.txt 2.txt
+ls -a
+git status
+git add 1.txt
+git status
+git add 2.txt
+git status
+ls -a
+git rm 1.txt
+git rm --cached 1.txt
+git status
+git add 1.txt
+git status
+git commit -m 'added two files'
+git status
+touch 3.txt
+ls
+git status
+vi 1.txt
+git status
+ls
+rm -rf 3.txt
+vi 1.txt
+git status
+ls
+git status
+git remote -v
+git remote add origin https://github.com/lycanthrope10100/repo2.git
+git remote -v
+git push origin main
+git push origin main
+git status
+ls
+pwd
+ls
+git pull origin main
+ls
+ls
+pwd
+cd ..
+ls
+pwd
+ls
+git clone https://github.com/lycanthrope10100/repo1.git
