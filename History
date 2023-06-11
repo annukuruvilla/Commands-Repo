@@ -1,3 +1,5 @@
+############################################################################################################################################
+#Day2
 cd Demo
 ls
 rm -rf a
@@ -75,3 +77,107 @@ ls
 pwd
 ls
 git clone https://github.com/lycanthrope10100/repo1.git
+############################################################################################################################################
+#Day3
+mkdir repo3
+cd repo3
+ls
+ls -la
+git init
+ls -la
+touch 1.txt 2.txt
+git status
+git add .
+git status
+git commit -m 'added 1.txt and 2.txt'
+git status
+ls
+git branch
+git branch featureA
+git branch
+git checkout featureA
+git branch
+ls
+touch 3.txt 4.txt
+ls
+git stash -u
+ls
+git status
+git stash pop
+ls
+git status
+git add .
+git status
+git commit -m 'added 3.txt and 4.txt'
+git status
+ls
+git log
+git revert a4d2cb26a08e1a6f162d99cce91a8dcffcce477a
+ls
+ls
+git log
+git diff be6cd1af9163401f3949eaae2fb1265eed757042 a4d2cb26a08e1a6f162d99cce91a8dcffcce477a
+git checkout main
+git branch
+ls
+git branch featureB
+git branch
+git checkout featureB
+ls
+touch a
+vi a
+cat a
+cat a
+git status
+git add a
+git status
+git commit -m 'added a'
+git status
+ls
+ls
+git checkout main
+git status
+ls
+git merge featureB
+ls
+git log
+git branch
+ls
+git checkout featureB
+ls
+git checkout featureA
+ls
+git branch
+ls
+git rebase main
+ls
+git ls
+ls
+git status
+vi a
+git status
+vi a
+git commit -m 'modified a'
+git add .
+git commit -m 'modified a'
+git checkout main
+cat a
+git merge featureA
+cat a
+git branch
+git checkout featureB
+vi a
+cat a
+git status
+git add .
+git status
+git commit -m 'modified a'
+git status
+git checkout main
+git merge featureB
+cat a
+git mergetool
+cat a
+git status
+git commit -m 'fixed a'
+git status
