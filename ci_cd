@@ -1,0 +1,26 @@
+ci cd
+ci :
+creation of code
+testing of code in *local*
+building the code - maven
+pushing the code to central artifactory - nexus
+
+
+
+Continous integration :
+code creation - pycharm, sublime, vs code, eclipse, android studio
+code version control - git ,svn
+building the code - maven, ant - package creation - artifacts - 8mb
+release version control - nexus, jfrog
+
+
+
+
+Continous Deployment :
+deploying the code - jenkins, github action
+
+
+
+manual steps :
+build the code on local
+copy code from local to production

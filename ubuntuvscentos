@@ -1,0 +1,7 @@
+ubuntu(debain based systems) - apt is your package manager
+redhat/fedora/centos/amazon linux - yum is your pm
+
+
+yum install jenkins
+yum goes to /etc/yum.repos.d
+*.repo - links to yum repository - public repo link
