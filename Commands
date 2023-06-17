@@ -5,3 +5,57 @@ sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 yum install jenkins -y
 systemctl start jenkins
+
+
+
+
+Apache
+yum install httpd
+
+
+
+whoami
+visudo
+tidy index.html
+echo $?
+
+
+tidy
+0 - success/no errors and no warnings
+1 - warning
+2 - errors
+
+
+
+Ansible :
+yum install python-pip
+pip install ansible
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ansible
+yum install python-pip
+pip install ansible
+
+
+
+
+
+
+
+
+
