@@ -1,0 +1,28 @@
+dev1 - associate developer
+dev2 - senior manager
+
+
+
+
+dev1 - featureA - project1
+dev2 - featureB - project2
+
+
+slave1
+
+
+git
+-> whenever pushing to github, it should build on jenkins
+once build, test and deploy on staging, if working fine, deploy on production
+
+
+apache web client
+
+Build Pipeline Plugin Version 1.5.8 
+
+10.20.43.135:8080/job/project1/build?token=secret
+
+
+
+1march2024 election results are coming - businnes team 40 machines are needed
+
