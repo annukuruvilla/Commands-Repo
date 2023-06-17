@@ -1,0 +1,11 @@
+#!/bin/bash
+sudo cp index.html /var/www/html/index.html
+sudo tidy /var/www/html/index.html
+if [[ $? -ne 0 ]]; then
+	sudo systemctl stop httpd
+	echo "index.html has some warnings or errors"
+	exit 1
+else
+	sudo systemctl start httpd
+	echo "index.html is fine."
+fi
