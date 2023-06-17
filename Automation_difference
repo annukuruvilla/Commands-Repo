@@ -1,0 +1,11 @@
+Automations :
+Configuration Management - Ansible, Puppet, Chef
+Infrastructure Creation - Terraform, Cloud Formation
+
+
+
+Project1 :
+yum install httpd
+systemctl start httpd
+yum install tidy
+Execute Shell Block
