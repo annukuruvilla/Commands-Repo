@@ -1,0 +1,18 @@
+master node - ansible - 10.1.1.1
+task1 - install apache on 100 servers
+slave node1 - 
+slave node2
+'....
+
+
+slave node 100'
+
+ansible - needs playbooks - yaml language
+
+
+43.251 - master
+43.135 - slave node
+43.50 - slave node
+
+
+useradd test
