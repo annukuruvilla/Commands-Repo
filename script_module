@@ -1,0 +1,3 @@
+script module
+copy hello.sh -> remote server/slave node
+run hello.sh on slave node
