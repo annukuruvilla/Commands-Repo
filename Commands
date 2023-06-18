@@ -26,32 +26,29 @@ tidy
 2 - errors
 
 
-
-Ansible :
-yum install python-pip
-pip install ansible
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Ansible
 yum install python-pip
 pip install ansible
 
 
+useradd test
+passwd test
+/etc/ssh/sshd_config
+service sshd restart
+
+
+
+ansible-playbook -i hosts 4-playbook-install-webserver-apache.yml -k --ask-become-pass
+
+-  hosts : localhost
+   connection: local
+
+
+
+
+yum install sshpass
+rpm -i http://mirror.centos.org/centos/7/extras/x86_64/Packages/sshpass-1.06-2.el7.x86_64.rpm
+https://github.com/puneetbhatia77/ansible_code
 
 
 
@@ -59,3 +56,11 @@ pip install ansible
 
 
 
+
+https://github.com/puneetbhatia77/ansible_code
+
+
+
+
+http://mirror.centos.org/centos/7/extras/x86_64/Packages/sshpass-1.06-2.el7.x86_64.rpm
+export ANSIBLE_HOST_KEY_CHECKING=False
