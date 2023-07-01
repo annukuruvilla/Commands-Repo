@@ -1,0 +1,20 @@
+    3  docker --version
+    4  docker image
+    5  docker image ls
+    6  clear
+    7  docker pull ubuntu
+    8  docker image ls
+    9  docker images
+   10  docker run -it ubuntu
+   11  docker ps
+   12  docker ps -a
+   13  docker run -it ubuntu /bin/sh
+   14  docker ps -a
+   docker run -it -d ubuntu
+   docker exec -it <container_id> /bin/bash
+   dpkg -l | grep curl
+   docker attach ubuntu
+   docker kill 684963992f9e
+   docker stop 684963992f9e
+   docker rm 684963992f9e
+   docker rmi <image_id>
