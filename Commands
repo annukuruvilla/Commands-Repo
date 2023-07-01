@@ -64,3 +64,27 @@ https://github.com/puneetbhatia77/ansible_code
 
 http://mirror.centos.org/centos/7/extras/x86_64/Packages/sshpass-1.06-2.el7.x86_64.rpm
 export ANSIBLE_HOST_KEY_CHECKING=False
+
+
+
+
+Docker :
+amazon linux - fedora
+yum update
+yum install docker
+service docker start
+
+https://killercoda.com/playgrounds/scenario/ubuntu
+https://hub.docker.com
+
+docker pull ubuntu
+docker images ls / docker images
+docker run -it ubuntu
+
+
+
+
+docker pull :
+search locally for image if found no problem
+if not found, go to pulbic docker repo and pull that image locally if found
+if not found on public repo, fail.
