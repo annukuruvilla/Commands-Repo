@@ -1,0 +1,43 @@
+Client :
+
+WebApp+DB
+FinanceApp
+
+
+32Cores+64GBRam
+
+12Cores - Vm1
+30GBRam - Vm1
+
+12Cores - Vm2
+30GBRam - Vm2
+
+
+
+Windows laptop - kernel - windows
+-> virutalbox(hypervisor) - kernel - ubuntu - os - ubuntu
+
+windows image -X linux os
+
+Containerization - 1-5seconds
+1-2min bootup - old way
+5-10min - virtualization
+
+
+Dev - mac system - build his java code - it is working fine
+Dev send that code to Devops to put under production
+production server - ubuntu machine - code failed
+
+
+
+
+OS
+All Libraries, All Modules, All preinstalled softwares
+
+
+Container
+Specific Libraries, Specific Moduels, Specific softwares
+
+
+
+2GB ISO - 79MB CONTAINER
