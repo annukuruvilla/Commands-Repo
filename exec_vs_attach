@@ -1,0 +1,2 @@
+docker exec - secondary shell into the container
+docker attach - primary shell into the container
