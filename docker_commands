@@ -1,0 +1,6 @@
+docker commit <containerId> abc
+docker commit <containerId> username_on_public_or_private_repo/any_name
+docker build -f Dockerfile . -t lycanthrope10100/ubuntu-apache
+docker volume create my-vol
+docker run -it --mount source=my-vol,destination=/test -d ubuntu
+docker run -it -d --name container2 ubuntu
