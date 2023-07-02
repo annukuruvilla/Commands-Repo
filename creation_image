@@ -1,0 +1,58 @@
+creation of image :
+docker commit - done
+docker import - this is mainly used for creating os base image - out of scope - tar balls .zip
+dockerfiles
+
+
+ubuntu base image
+installed curl
+ 
+docker run -it -d ubuntu /bin/bash
+
+
+FROM, ADD, RUN
+ENTRYPOINT and CMD
+
+ENTRYPOINT will run cmd, irrespective of arguement given while running the container.
+CMD will run cmd only if arguement is not given while running the container.
+
+
+
+-p port1:port2
+port2 - this is a port inside the container
+port1 - this is a port outside the container which is mapped to port2
+
+-p 81:80
+os - opening 81 port and mapping it to port 80 inside the container
+
+
+
+
+
+
+
+
+
+staging and production - their code is similar
+config.properties
+
+if env is prod then
+select prod variable
+
+if env is staging then
+select staging variables
+
+
+
+docker run -it --mount source=<source=folder>,destination=<destination- folder> -d <container-name>
+
+
+docker volume vs bind mounts :
+docker volume - create a volume and map it inside the container at a specific folder
+bind mount - existing folder or directory in os mapped inside the container at a specific folder.
+
+
+
+
+
+docker run -it –v <source-directory>:<destination-directory> -d <image-name>
