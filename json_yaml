@@ -1,0 +1,17 @@
+json file .json
+key: value,
+key2: value2,
+key3 :
+ key4: value4
+
+
+
+
+version: '3'
+services:
+  sample1:
+    image: lyncathrope10100/apache-curl
+    ports:
+     - "5000:5000" 
+  sample2:
+    image: nginx
