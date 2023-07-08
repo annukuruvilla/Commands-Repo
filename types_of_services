@@ -1,0 +1,16 @@
+three types of service :
+Cluster IP - Internal Load Balancing
+NodePort - Simply exposing ports to your local vm
+LoadBalancer - Public Load Balancing
+
+
+
+
+3 pods running :
+load balancing
+
+10 request send to application
+cluster ip will be the frontend for that
+and backend would be 3 pods
+
+3 db pods
