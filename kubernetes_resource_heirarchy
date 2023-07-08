@@ -1,0 +1,18 @@
+pods
+nodes
+services
+secrets
+serviceaccounts
+configmaps
+ingress
+deployments
+daemonset
+namespace
+replicaset
+
+
+monitoring
+all pod s of monitoring inside that namespace
+
+application
+appl pods of application inside that namespace
