@@ -1,0 +1,10 @@
+apt-get update
+apt-get install docker.io -y
+apt-get install curl -y
+curl -LO https://dl.k8s.io/release/v1.17.0/bin/linux/amd64/kubectl
+chmod +x ./kubectl
+sudo mv ./kubectl /usr/local/bin/kubectl
+kubectl version --client -o json
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_1.6.2.deb  && sudo dpkg -i minikube_1.6.2.deb
+sudo minikube config set vm-driver none
+minikube start
