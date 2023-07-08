@@ -1,0 +1,23 @@
+1 deployemnt - 10 pods
+5 nodes
+
+
+
+
+1st : A B C
+2nd : E
+3rd :
+4th : D
+5th :F
+6th :
+
+kube-proxy
+
+1 daemonset - 5pods
+
+1st: DS1
+2nd: DS2
+3rd: DS3
+4th: DS4
+5th: DS5
+6th: DS6
