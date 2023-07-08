@@ -1,0 +1,9 @@
+Self Healing
+AutoScaling
+
+Assume 5 containers of application are running at this instant
+increase to 10 containers
+
+
+kubectl - kubernetes api server
+docker - docker engine
