@@ -1,0 +1,18 @@
+4 nodes
+each node can accomodate 4 containers
+16  containers in total
+
+
+
+
+Flow of Kuberenetes Architecture :
+user wants to deploy an application ->
+kubectl -> Kubeserver API -> ETCD
+                          -> Scheduler - scheduled application to slavenode-1
+scheduling -> Scheduler told slavenode-1 is ready for application
+kubeserver API -> sent request to Kubelet service for Slavenode1
+scheduler will tell to start application on Slavenode1
+once application is started -> kubelet will send communication back to Kube server API that application is now up and ready. -> ETCD entry will get updated by Kube server API that application is up and ready.
+
+
+user wants 3 containers of application at any point of time -> controller manager(replication controller) -> scheduler that user wants 3 pods to be up at all time -> 
