@@ -1,0 +1,15 @@
+deployments
+replicaset
+pods
+
+
+standalone pod
+live-test-pod
+
+uat : standalone pod - testing is done on this
+production - first thing - creation of a live test pod- monitoring of the live test pod - once this is completed then rollout on all other pods
+
+
+100 standalone pods - v1 code
+
+v2 code
