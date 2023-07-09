@@ -1,0 +1,89 @@
+   82  minikube dashboard &
+   83  kubectl get svc -A
+   84  ip a
+   85  kubectl get svc -A
+   86  kubectl edit service kubernetes-dashboard
+   87  kubectl edit service kubernetes-dashboard -n kubernetes-dashboard
+   88  apt-get install vim -y
+   89  kubectl edit service kubernetes-dashboard -n kubernetes-dashboard
+   90  kubectl get svc -A
+   91  kubectl get pods
+   92  kubectl describe pod web-app-69646bffdb-89gzf
+   93  ls
+   94  git clone https://github.com/puneetbhatia77/k8s-scripts
+   95  cd k8s-scripts/
+   96  ls
+   97  kubectl ap-resources
+   98  kubectl api-resources
+   99  vi create-pod.yml 
+  100  kubectl api-resources
+  101  vi create-pod.yml 
+  102  kubectl apply -f create-pod.yml 
+  103  kubectl get pods
+  104  kubectl run web-app --image=nginx --restart=Never
+  105  kubectl get pods
+  106  kubectl get deployment
+  107  vi create-deployment.yml 
+  108  kubectl apply -f create-deployment.yml 
+  109  kubrctl get deployment
+  110  kubectl get deployment
+  111  kubectl get pods
+  112  cat create-pod.yml 
+  113  cat create-deployment.yml 
+  114  kubectl get replicaset
+  115  vi deployment-replicas.yml 
+  116  kubectl apply -f deployment-replicas.yml 
+  117  kubectl get replicaset
+  118  kubectl get deployment
+  119  vi create-namespace.yml 
+  120  kubectl apply -f create-namespace.yml 
+  121  kubectl get namespaces
+  122  kubectl create namespace springpeople
+  123  kubectl get namespaces
+  124  kubectl apply -f create-namespace.yml 
+  125  kubectl get pods
+  126  kubectl get pods -n springpeople
+  127  kubectl get deployment -n springpeople
+  128  git remote -v
+  129  vi create-job.yml 
+  130  kubectl apply -f create-job.yml 
+  131  kubectl get job
+  132  kubectl logs countdown-mohit
+  133  kubectl logs job countdown-mohit
+  134  kubectl describe job countdown-mohit
+  135  kubectl get job
+  136  kubectl get pods
+  137  kubectl logs countdown-mohit-mxdxf
+  138  kubectl get deployment
+  139  kubectl delete deployment springpeople-deployment-replicaset springpeople-deployment web-app-new hello-nginx
+  140  kubectl get deployment
+  141  kubectl get pods
+  142  vi create-cron-job.yml 
+  143  vi create-job.yml 
+  144  vi create-cron-job.yml 
+  145  kubectl apply -f create-cron-job.yml 
+  146  kubectl get jobs
+  147  kubectl get cronjobs
+  148  kubectl get pods
+  149  kubectl get cronjobs
+  150  kubectl get pods
+  151  kubectl get cronjobs
+  152  kubectl delete cronjob timer
+  153  kubectl delete job countdown
+  154  kubectl delete job countdown-mohit
+  155  kubectl get cronjobs
+  156  kubectl get pods
+  157  vi cpu-limits.yml 
+  158  kubectl apply cpu-limits.yml 
+  159  kubectl apply -f cpu-limits.yml 
+  160  kubectl get pods
+  161  kubectl describe pod springpeople-cpu
+  162  vi memory-limits.yml 
+  163  kubectl get pods
+  164  kubectl delete pod springpeople-cpu
+  165  vi create-secret.yml 
+  166  kubectl apply -f create-secret.yml 
+  167  kubectl get secret
+  168  kubectl get secret tomcat-pass -o json
+  169  kubectl edit secret tomcat-pass
+  170  history
