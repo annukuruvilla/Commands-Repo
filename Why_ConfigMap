@@ -1,0 +1,18 @@
+pod file - nginx
+under your nginx pod - index.html
+
+
+my manager tell - every 2 days, I have to update this index.html
+
+
+100 pods - in production of nginx
+
+kubectl exec -it nginx-pod-1 /bin/bash
+vi /var/www/html/index.html - edit it
+save
+exit from pod
+
+image_v1 - index.html (v1)
+image_v2 - index.html (v2) - rollout deployment
+
+configmap is reasource attached to your pod - index.html
