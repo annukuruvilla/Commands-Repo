@@ -1,0 +1,13 @@
+AB Testing
+
+A
+80% of traffic is sent to v1 version of code - terrible ui
+
+
+
+B
+20% of traffic is sent to v2 version of code - improved ui
+
+
+UAR(v1) - 3minutes
+UAR(v2) - 15 minutes
