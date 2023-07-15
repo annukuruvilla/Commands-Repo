@@ -1,0 +1,75 @@
+  177  ping www.google.com
+  178  ping www.google.com &
+  179  kubectl api-resources
+  180  cat > job.yaml
+  181  kubectl apply -f job.yaml 
+  182  kubectl get jobs
+  183  kubectl get pods
+  184  docker ps
+  185  docker ps | grep counter
+  186  docker ps -a | grep counter
+  187  kubectl get secrets -o json
+  188  ls
+  189  cd k8s-scripts/
+  190  ls
+  191  vi configMap.yml 
+  192  kubectl get configmap
+  193  kubectl apply -f configMap.yml 
+  194  kubectl get configmap
+  195  vi configMap.yml 
+  196  vi pod-configMap.yml 
+  197  kubectl apply -f pod-configMap.yml 
+  198  kubectl get pods
+  199  kubectl exec -it configmap-demo-pod /bin/sh
+  200  kubectl get podws
+  201  kubectl get pods
+  202  kubectl get pods -A
+  203  minikube addons enable ingress
+  204  kubectl get pods -A
+  205  kubectl get ingress
+  206  kubectl get pods -A
+  207  kubectl create deployment web --image=gcr.io/google-samples/hello-app:1.0
+  208  kubectl get pods
+  209  kubectl delete pod web-app
+  210  kubectl get pods
+  211  kubectl expose deployment web --type=NodePort --port=8080
+  212  kubectl get services
+  213  ip a
+  214  kubectl get services
+  215  kubectl get pods
+  216  kubectl exec -it web-557f59c6cf-4lvm5 /bin/bash
+  217  kubectl exec -it web-557f59c6cf-4lvm5 /bin/sh
+  218  kubectl exec -it web-557f59c6cf-4lvm5 /bin/zsh
+  219  kubectl get services
+  220  curl 192.168.247.162:32251
+  221  kubectl get services web
+  222  minikube service web --url
+  223  ip a
+  224  minikube service web --url
+  225  curl http://192.168.226.137:32251
+  226  kubectl create deployment web2 --image=gcr.io/google-samples/hello-app:2.0
+  227  kubectl get deployment
+  228  kubectl get pods
+  229  kubectl expose deployment web2 --port=8080 --type=NodePort
+  230  kubectl get service
+  231  curl http://192.168.226.137:32251
+  232  curl http://192.168.226.137:31285
+  233  ls
+  234  vi example-ingress-2.yaml 
+  235  kubectl apply -f example-ingress-2.yaml 
+  236  kubectl get ingress
+  237  vi example-ingress-2.yaml 
+  238  ping buzzyworld.com
+  239  vi /etc/hosts
+  240  cat /etc/host
+  241  cat /etc/hosts
+  242  vi /etc/hosts
+  243  cat /etc/hosts
+  244  ping buzzyworld.com
+  245  curl buzzyworld.com
+  246  curl buzzyworld.com/v2
+  247  cat example-ingress-2.yaml 
+  248  curl buzzyworld.com/v1
+  249  vi example-ingress-2.yaml 
+  250  curl buzzyworld.com/v3
+  251  curl buzzyworld.com/v4
