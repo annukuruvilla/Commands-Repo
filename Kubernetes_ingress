@@ -1,0 +1,21 @@
+ifconfig
+
+
+host-only
+nat -
+
+
+buzzyworld - /v1 - web deploypemnt - imagev1.0.0
+             /v2 - web2 deployment - imagev2.0.0
+
+
+buzzyworld/v1 - append the actual request with /v1
+buzzyworld/v2 - append the actual request with /v2
+
+
+buzzyworld/v1/index.html
+
+
+
+Earlier - nodeport exposed to a specific port and then requests were sent
+Now - ingress will directly send to internal port of the service and ingress IP will be public for us
