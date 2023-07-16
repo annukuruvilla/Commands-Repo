@@ -1,0 +1,21 @@
+bootstrapping
+
+
+vm using ami - terraform
+install java and copy .jar file there and run it. - cm
+
+ami - os+java
+os installation and java installation - were time taking
+ami - os+java
+
+vm using ami - terraform
+copy of .jar - cm
+
+
+dev requirement
+ubuntu
+java
+he will give me .jar he wants to copy it on the server
+
+
+terraform - cloud agnostic
