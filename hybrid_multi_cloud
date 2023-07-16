@@ -1,0 +1,3 @@
+hybrid - onprem+cloud
+aws+azure ^
+vmware onprem - mumbai + openstack onprem - hyderabad ^
