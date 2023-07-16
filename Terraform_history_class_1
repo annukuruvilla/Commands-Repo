@@ -1,0 +1,39 @@
+  264  mkdir learn-terraform-docker-container
+  265  cd learn-terraform-docker-container/
+  266  pwd
+  267  vi main.tf
+  268  ls
+  269  ls -la
+  270  terraform init
+  271  ls -la
+  272  terraform plan
+  273  terraform apply
+  274  docker ps | grep nginx
+  275  docker ps -a | grep nginx
+  276  docker ps | grep nginx
+  277  kubectl get pods -A
+  278  docker ps | grep nginx
+  279  docker ps | grep tutorial
+  280  ip a
+  281  docker ps
+  282  docker ps| grep tutorial
+  283  docker exec -it tutorial /bin/bash
+  284  ls -la
+  285  cat terraform.tfstate 
+  286  ls
+  287  ls -la
+  288  terraform destroy
+  289  ls -la
+  290  cat terraform.tfstate
+  291  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+  292  unzip awscliv2.zip 
+  293  ls
+  294  ./aws/install 
+  295  aws --version
+  296  aws configure
+  297  cd ~
+  298  pwd
+  299  ls -la
+  300  cd .aws/
+  301  ls
+  302  cat config
