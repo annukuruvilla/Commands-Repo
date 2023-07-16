@@ -1,0 +1,21 @@
+Two types of Automation in Devops :
+Configuration Management - Ansible, Puppet, Chef, Salt
+Infrastructure AS A CODE - IaaC
+
+
+State files - terraform creates these files when instance or resource is created
+
+docker
+vm - ubuntu/centos/arch - docker - container
+
+
+vm + os installation - IaaC
+docker + container - CM
+
+vm - IaaC
+os installation + docker + container - CM
+
+
+vm + os installation - IaaC
+docker - CM
+containers - IaaC
