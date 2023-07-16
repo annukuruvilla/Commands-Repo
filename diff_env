@@ -1,0 +1,35 @@
+Staging - dev/qa - 9am-6pm
+3vm+1vm
+1network
+1load balancer
+
+
+Dev
+Manually
+{
+	1vm
+}
+
+Terraform
+{
+code()
+3vm
+1network
+1load balancer
+state file - i created 3 vms, 1 network, 1 load balancer
+}
+
+UAT
+3vm
+1network
+1load balancer
+
+Beta
+3vm
+1network
+1load balancer
+
+Production
+3vm
+1network
+1load balancer
