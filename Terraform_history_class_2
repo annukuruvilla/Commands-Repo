@@ -1,0 +1,87 @@
+  311  aws configure list
+  312  ls
+  313  cd learn-terraform-docker-container/
+  314  ls
+  315  cat main.tf 
+  316  ls -la
+  317  cd ..
+  318  ls
+  319  aws --version
+  320  aws configure list
+  321  pwd
+  322  ls -la
+  323  cd /root/
+  324  ls
+  325  ls --la
+  326  ls -la
+  327  cd .aws/
+  328  ls
+  329  cd /home/master/
+  330  ls
+  331  cd learn-terraform-aws-instance
+  332  vi main.tf
+  333  history
+  334  ls
+  335  vi main.tf
+  336  terraform init
+  337  ls -la
+  338  terraform fmt
+  339  vi main.tf 
+  340  terraform validate
+  341  vi main.tf 
+  342  terraform validate
+  343  vi main.tf 
+  344  terraform plan
+  345  terraform apply
+  346  terraform destroy
+  347  ls
+  348  cd ..
+  349  ls
+  350  mkdir learn-terrafrom-multiple-aws-instance
+  351  cd learn-terrafrom-multiple-aws-instance
+  352  ls
+  353  cp ../learn-terraform-aws-instance/main.tf .
+  354  ls
+  355  vi main.tf 
+  356  vi vars.tf
+  357  vi terraform.tfvars
+  358  cat main.tf 
+  359  ls
+  360  cat vars.tf 
+  361  cat terraform.tfvars 
+  362  vi outputs.tf
+  363  cat main.tf 
+  364  cat outputs.tf
+  365  vi provider.tf
+  366  vi main.tf 
+  367  cd ..
+  368  ls
+  369  tree learn-terrafrom-multiple-aws-instance/
+  370  apt-get install tree -y
+  371  tree learn-terrafrom-multiple-aws-instance/
+  372  terraform validate
+  373  ls
+  374  cd learn-terrafrom-multiple-aws-instance/
+  375  ls
+  376  terraform init
+  377  terraform plan
+  378  terraform apply
+  379  terraform validate
+  380  terraform apply
+  381  ls
+  382  cat terraform.tfstate 
+  383  terraform destroy
+  384  cat terraform.tfstate
+  385  cat outputs.tf 
+  386  apt-get install htop
+  387  htop
+  388  cd /var/log/
+  389  ls
+  390  tail -f auth.log
+  391  cat auth.log| grep fail
+  392  cat auth.log| grep -i fail
+  393  nproc
+  394  free -g
+  395  free -m
+  396  ip a
+  397  history
