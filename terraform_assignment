@@ -1,0 +1,14 @@
+Prerequisite :
+1VM - ubuntu - 2Vcpu and 2GiB
+Install terraform on Vm1 - ansible
+Create a new VM using terraform - ansible <ip and host file>
+Install Docker on Vm2 - ansible
+Install terrafrom on Vm2 - ansible
+Use terraform on VM2 to create a container on VM2 - using Vm1 - ansible
+create a job in jenkins to accomodate all of these above tasks - vm1
+
+Problem statement :
+Containerize Nginx service.
+
+Condition :
+Nothing should be done on 1VM. 1VM can only be used to leverage tools.
