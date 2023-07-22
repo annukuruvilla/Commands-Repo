@@ -1,0 +1,12 @@
+two types of monitoring :
+system metrics/application metrics - telegraf, node_exporter, blackbox_exporter, java_exporter
+apm - splunk, app dynamics, firebase, statsd
+log monitoring - ELK stack
+
+
+
+application is up and running
+how many requests are coming
+how many errors
+how many 200 reponses
+404 - 500 at 22:54 - 
