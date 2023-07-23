@@ -1,0 +1,111 @@
+apt-get update
+apt-get install openjdk-8-jdk -y
+apt-get install nginx -y
+wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
+sudo apt update
+sudo apt install elasticsearch -y
+sudo apt install kibana -y
+sudo apt install logstash -y
+sudo apt install filebeat -y
+
+###  vi /etc/elasticsearch/elasticsearch.yml
+
+network.host: localhost
+
+-------------------
+sudo systemctl start elasticsearch
+sudo systemctl status elasticsearch
+
+##########
+
+curl -X GET "localhost:9200"
+
+
+##### vi /etc/kibana/kibana.yml
+
+server.port: 5601
+server.host: localhost
+
+########
+
+
+sudo systemctl start kibana
+sudo systemctl status kibana
+
+
+
+sudo systemctl start logstash
+sudo systemctl status logstash
+
+Go to Kibana
+
+
+===================================================================
+Lab work
+--------
+https://www.elastic.co/guide/en/elasticsearch/reference/current/monitoring-settings.html
+Example-1 : sample data
+	Manage spaces -> Kibana -> Index patterns -> Add sample data -> sample flight data -> view data -> dashboard
+
+Example-2 : upload csv file	
+
+	wget https://raw.githubusercontent.com/PacktPublishing/Kibana-7-Quick-Start-Guide/master/Chapter02/crimes_2001.csv
+	
+	root@elk:~# cp crimes_2001.csv /home/master/
+
+
+        vi /etc/logstash/conf.d/crimes.conf
+
+# Logstash configuration file to read CSV data. Add Elasticsearch username and password if you have configured the security.
+input {
+	file {
+		path => "/home/master/crimes_2001.csv"
+		start_position => beginning
+	}
+}
+filter {
+	csv {
+		columns => [
+			"ID",
+			"Case Number",
+			"Date",
+			"Block",
+			"IUCR",
+			"Primary Type",
+			"Description",
+			"Location Description",
+			"Arrest",
+			"Domestic",
+			"Beat",
+			"District",
+			"Ward",
+			"Community Area",
+			"FBI Code",
+			"X Coordinate",
+			"Y Coordinate",
+			"Year",
+			"Updated On",
+			"Latitude",
+			"Longitude",
+			"Location"
+		]
+		separator => ","
+	}
+}
+output {
+	elasticsearch {
+		action => "index"
+		hosts => ["127.0.0.1:9200"]
+		index => "crimes"
+	}
+}
+
+
+Goto kibana dashboard -> D -> manage spaces - kibana -> Index management should have the entry for "crimes_2001.csv" after some time.
+Goto kibana dashboard -> D -> manage spaces - kibana - index patterns - create index pattern -crime* - @timestamp
+
+
+Discover -> change index pattern -> crime*
+
+#filter
