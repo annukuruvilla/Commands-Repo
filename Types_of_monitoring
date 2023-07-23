@@ -8,5 +8,17 @@ log monitoring - ELK stack
 application is up and running
 how many requests are coming
 how many errors
-how many 200 reponses
+how many 200 reponses - 500 - 
 404 - 500 at 22:54 - 
+
+
+push all logs of application to ELK stack
+facebook.com/reels - 404 responses - 200 (404)-responses
+facebook.com/login - 200 responses - 300 (200)-responses
+
+
+One Plus - 30%
+Iphone - 40%
+Samsung Galaxy - 30%
+
+
