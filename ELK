@@ -1,0 +1,69 @@
+Logstash : pipelines
+Either it can collect data by itself - .csv, .txt
+or either I can push data to logstash
+1) It can work as a frontend to collect the logs and send the data to ES.
+2) It can slice and dice the data or parse the data. file of 500 lines - slicing - 250lines to ES
+
+
+Kibana :
+1)GUI for ES and Logstash
+2)Analysing the pushed data to ES
+3)Visualization
+
+
+GUI for ES - Cerebro
+PAAS/SAAS service - Sumologic, Coralogix, Splunk
+Management Overhead
+
+
+Beats/Fluentbit,Filebeats,Metricsbeat :
+often called as collector or pushers
+
+
+100 servers
+100 collectors - they can push the data to logstash
+
+100pod - nginx+applicationcode
+10pod - filebeat
+
+curl localhost:9200/_cat/indice="intellipaat"
+
+
+heat map
+trendings words on twitter - 
+
+
+
+
+slicing and dicing using collectors: fluentbit or beats
+
+advantage:
+save the cost of logstash
+
+disadvantage:
+in monolithic, pressure on application and can impact app
+
+
+
+
+
+
+
+
+ES - it can consume 10000logs/second = index rate
+collector rate = 15000logs/second
+logtstash - temporary journals - pipelines
+
+There is a competitor now for ES - Loki
+
+ELK stack actually in production
+
+4 logstash machines
+6 elasticsearch machines - 1TB*6=6TB
+1 kibana machines
+
+
+crimes-23-07-2023
+crimes-22-07-2023
+
+crimes*
